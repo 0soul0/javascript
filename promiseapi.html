@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>promise test</p>
+        <button onclick="promise1(1000)">promise 成功</button>
+        <button onclick="promise1(0)">promise 錯誤</button>
+        <button onclick="promiseChain()">promise chain</button>
+        <button onclick="promiseSuccess()">promise api 成功 需等6秒</button>
+        <button onclick="promiseError()">promise api 失敗</button>
+        <button onclick="loadImage()">promise api 讀取圖片</button>
+    </body>
+    <script>document.write("<script type='text/javascript' src='./es6test/promise.js?v="+ Date.now() + "'><\/script>")</script>
+    <!-- <script src="es6test/promise.js" type="text/javascript"></script> -->
+</html>
