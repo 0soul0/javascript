@@ -13,7 +13,12 @@ const moduleSample = () => {
     admin.name = "moduleSample";
     sayHi(admin.name);
 }
-document.getElementById("modelSample").addEventListener("click", moduleSample)
+modelSample.onclick = function (event) {
+    if (event.altKey && event.shiftKey) {
+        moduleSample();
+    }
+}
+//document.getElementById("modelSample").addEventListener("click", moduleSample)
 
 const moduleSample1 = () => {
 
